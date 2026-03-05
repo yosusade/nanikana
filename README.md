@@ -7,3 +7,5 @@ npm install three @pixiv/three-vrm
 npm start
 
 在vscode里面的终端里输入，在"vrm桌宠>"后面输入
+
+对了，不要忘了在解压后的文件夹里新建一个空文件夹"vrm-pet"
