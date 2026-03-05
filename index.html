@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>VRM 桌宠</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: transparent; /* 网页背景透明 */
+      /* 🌟 核心：让整个网页变成可拖拽区域，这样你就可以用鼠标移动桌宠了 */
+      -webkit-app-region: drag; 
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+  <!-- 使用 Import Map 引入 Three.js 和 VRM 库 -->
+ <script type="importmap">
+    {
+      "imports": {
+        "three": "./node_modules/three/build/three.module.js",
+        "three/addons/": "./node_modules/three/examples/jsm/",
+        "@pixiv/three-vrm": "./node_modules/@pixiv/three-vrm/lib/three-vrm.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- 引入我们的 3D 逻辑代码 -->
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

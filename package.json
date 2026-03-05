@@ -1,0 +1,15 @@
+{
+  "name": "vrm-pet",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^29.4.6"
+  },
+  "dependencies": {
+    "@pixiv/three-vrm": "^3.5.0",
+    "three": "^0.183.2"
+  }
+}
